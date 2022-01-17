@@ -1,7 +1,7 @@
 FROM golang:latest AS build
 
-apt update
-apt install -y ffmpeg
-apt install -y vim
-apt install -y snapd
-snap install -y yq 
+RUN apt update
+RUN apt install -y ffmpeg
+RUN apt install -y vim
+RUN apt install -y snapd
+RUN snap install -y yq 
